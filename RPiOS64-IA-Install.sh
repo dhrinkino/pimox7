@@ -166,7 +166,7 @@ $GREEN ! FIXING NETWORK CONFIGURATION.... ERRORS ARE NOMALAY FINE AND RESOLVED A
 =========================================================================================
 \n"
 printf "127.0.0.1\tlocalhost
-$RPI_IP_ONLY\t$HOSTNAME `echo $HOSTNAME | awk -F '.' '{print $1}'` \n"
+$RPI_IP_ONLY\t$HOSTNAME `echo $HOSTNAME | awk -F '.' '{print $1}'` \n" > /etc/hosts
 printf "auto lo
 iface lo inet loopback
 
